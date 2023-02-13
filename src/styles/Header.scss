@@ -66,6 +66,13 @@ nav {
 	justify-content: center;
 	align-items: center;
 }
+.container-menu{
+	display: flex;
+	flex-direction: row;
+	position: absolute;
+	top: 60px;
+	right: 0;
+}
 @media (max-width: 640px) {
 	.menu {
 		display: block;

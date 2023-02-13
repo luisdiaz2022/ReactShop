@@ -55,8 +55,10 @@ const Header = () => {
                     </li>
                 </ul>
             </div>
-            {toggleMenu && <Menu />}
-            {toggleCart && <MyOrder />}
+            <div className='container-menu'>
+                {toggleMenu && <Menu />}
+                {toggleCart && <MyOrder toggleCart={toggleCart} handleToggleCart={handleToggleCart} />}
+            </div>
         </nav>
     );
 }
