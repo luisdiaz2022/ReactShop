@@ -11,6 +11,12 @@
 	bottom: 0;
 	border-radius: 6px;
 	border: 1px solid var(--very-light-pink);
+	position: fixed;
+	transition: 1s ease;
+	animation: swipeLeft 1s ease forwards;
+	overflow-y: scroll;
+  	max-height: 400px;
+  	scroll-behavior: smooth;
 }
 .title-container {
 	display: flex;
@@ -60,5 +66,8 @@
 @media (max-width: 640px) {
 	.MyOrder {
 		width: 100%;
+	}
+@keyframes swipeLeft {
+		100% {transform: translateX(-360px);}
 	}
 }

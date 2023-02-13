@@ -5,10 +5,10 @@ import AppContext from '../context/AppContext.js'
 import arrow from '../assets/icons/flechita.svg'
 
 const MyOrder = () => {
-	const {state} = useContext(AppContext);
+	const {state,handleToggleCart,toggleCart} = useContext(AppContext);
 
 	const sumTotal = () => {
-		const reducer = (accumalator, currentValue) => accumalator + currentValue.price;
+		const reducer = (accumalator, currentValue) => accumalator + currentValue.price
 		const sum = state.cart.reduce(reducer, 0);
 		return sum;
 	}
@@ -16,7 +16,9 @@ const MyOrder = () => {
 	return (
 		<aside className="MyOrder">
 			<div className="title-container">
-				<img src={arrow} alt="arrow" />
+				<img src={arrow} alt="arrow" 
+				onClick={() => handleToggleCart(!toggleCart)}
+				/>
 				<p className="title">My order</p>
 			</div>
 			<div className="my-order-content">
