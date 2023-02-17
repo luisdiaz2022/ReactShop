@@ -27,23 +27,12 @@ const useInitialState = () => {
 		setToggleCart(!toggleCart);
 	}
 
-    const [quantity, setQuantity] = useState(0);
-    const handleDecreaseQuantity = () =>{
-        setQuantity(quantity - 1);
-    }
-    const handleIncreaseQuantity = () =>{
-        setQuantity(quantity + 1);
-    }
-
     return {
         state,
         addToCart,
         removeFromCart,
         handleToggleCart,
-        toggleCart,
-        quantity,
-        handleDecreaseQuantity,
-        handleIncreaseQuantity
+        toggleCart
     }
 }
 

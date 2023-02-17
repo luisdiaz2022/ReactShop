@@ -15,9 +15,9 @@ const ProductItem = ({product}) => {
 	let image = mockImage;
 	try {
 		if (product.images && product.images.length > 0) {
-		  const img = new Image();
-		  img.src = product.images[0];
-		  img.onload = () => {
+			const img = new Image();
+			img.src = product.images[0];
+			img.onload = () => {
 			image = product.images[0];
 		  };
 		}

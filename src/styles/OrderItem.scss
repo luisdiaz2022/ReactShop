@@ -23,3 +23,29 @@
 	font-size: var(--md);
 	font-weight: bold;
 }
+.quantity-container{
+	display: flex;
+	gap: 5px;
+	align-items: center;
+	width: 5px;
+}
+.increase{
+	background-color: #ACD9B2;
+	border: 2px solid darkgray;
+	border-color: black;
+	align-items: center;	
+}
+.decrease{
+	background-color: #ACD9B2;
+	border: 2px solid darkgray;
+	border-color: black;
+	align-items: center;	
+}
+.quantity{
+	background-color: #ACD9B2;
+	border: 2px solid darkgray;
+	border-color: black;
+	align-items: center;
+	width: 30px;
+
+}
