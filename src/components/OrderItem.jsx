@@ -9,7 +9,7 @@ const OrderItem = ({product}) => {
 	const handleRemover = product => {
 		removeFromCart(product);
 	}
-	const [quantity, setQuantity] = useState(0);
+	const [quantity, setQuantity] = useState(1);
     const handleDecreaseQuantity = () =>{
 		if(quantity > 1){
         setQuantity(quantity - 1);
@@ -18,7 +18,7 @@ const OrderItem = ({product}) => {
        if(quantity < 10){ 
 	   setQuantity(quantity + 1);
     }}
-
+	
 	return (
 		<div className="OrderItem">
 			<figure>
